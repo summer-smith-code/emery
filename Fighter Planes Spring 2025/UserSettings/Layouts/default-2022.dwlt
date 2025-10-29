@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 100
+  controlID: 24
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 1157
     height: 1299
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -343,7 +343,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9ae2ffff
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\summe\Documents\school\DIG3480\Fighter Planes Spring
+  m_LastProjectPath: C:\Users\summe\Documents\GitHub\emery\Fighter Planes Spring
     2025
   m_LockTracker:
     m_IsLocked: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: d8590000
     m_LastClickedID: 23000
-    m_ExpandedIDs: 00000000525e0000545e0000565e0000
+    m_ExpandedIDs: 00000000385a00003a5a00003c5a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,7 +503,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000525e0000545e0000565e0000
+    m_ExpandedIDs: ffffffff00000000385a00003a5a00003c5a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.12994614, y: -0.17102857, z: 0.022762252, w: -0.97639966}
     speed: 2
-    m_Value: {x: -0.12994541, y: -0.17102762, z: 0.022762125, w: -0.9763942}
+    m_Value: {x: -0.12994614, y: -0.17102857, z: 0.02276225, w: -0.97639966}
   m_Size:
     m_Target: 2.884636
     speed: 2
