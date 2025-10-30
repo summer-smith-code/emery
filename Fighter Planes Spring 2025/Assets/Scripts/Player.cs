@@ -55,11 +55,19 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x * -1, transform.position.y, 0);
         }
-        //Player leaves the screen vertically
-        if(transform.position.y > verticalScreenLimit || transform.position.y <= -verticalScreenLimit)
+        
+        //Player can't go above the halfway point on the screen, or below the screen
+        // CHANGES IN THESE LINES
+        if (transform.position.y > verticalScreenLimit / 4)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y * -1, 0);
+            transform.position = new Vector3(transform.position.x, verticalScreenLimit / 4, 0);
+        }
+
+        if (transform.position.y < (-verticalScreenLimit + 3))
+        {
+            transform.position = new Vector3(transform.position.x, (-verticalScreenLimit + 3), 0);
         }
     }
+    
 
 }
