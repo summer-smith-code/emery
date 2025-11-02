@@ -1,5 +1,5 @@
 # DIG3480
-Summer and Emma's Repository for Computer as a Medium projects!
+Week 11 Assignment
 - Contributors:
 - Emma Lundquist
 - Summer Smith
