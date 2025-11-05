@@ -6,4 +6,4 @@ Week 12 Assignment
 
 Task 1 - Completed by Summer Smith. Edited GameManager.cs
 
-Task 2 - 
+Task 2 - Completed by Emma Lundquist. Edited GameManager.cs and created Coin.cs
