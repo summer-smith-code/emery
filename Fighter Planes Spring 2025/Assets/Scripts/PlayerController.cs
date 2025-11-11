@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -38,11 +39,16 @@ public class PlayerController : MonoBehaviour
 
     public void LoseALife()
     {
-        //Do I have a shield? If yes: do not lose a life, but instead deactivate the shield's visibility
-        //If not: lose a life
-        //lives = lives - 1;
-        //lives -= 1;
-        lives--;
+        // check for shield
+        if (shieldPrefab.activeSelf == true)
+        {
+            shieldPrefab.SetActive(false);
+            gameManager.PlaySound(2);
+            gameManager.ManagePowerupText(0);
+            return;
+        } else {
+            lives-=1;
+        }
         gameManager.ChangeLivesText(lives);
         if (lives == 0)
         {
@@ -61,6 +67,17 @@ public class PlayerController : MonoBehaviour
         gameManager.PlaySound(2);
     }
 
+    IEnumerator ShieldPowerDown()
+    {
+        yield return new WaitForSeconds(3f);
+        if (shieldPrefab.activeSelf == true)
+        {
+            gameManager.PlaySound(2);
+            shieldPrefab.SetActive(false);
+            gameManager.ManagePowerupText(0);
+        }
+    }
+
     IEnumerator WeaponPowerDown()
     {
         yield return new WaitForSeconds(3f);
@@ -74,7 +91,7 @@ public class PlayerController : MonoBehaviour
         if(whatDidIHit.tag == "Powerup")
         {
             Destroy(whatDidIHit.gameObject);
-            int whichPowerup = Random.Range(1, 5);
+            int whichPowerup = 4; //Random.Range(1, 5);
             gameManager.PlaySound(1);
             switch (whichPowerup)
             {
@@ -96,11 +113,20 @@ public class PlayerController : MonoBehaviour
                     gameManager.ManagePowerupText(3);
                     break;
                 case 4:
-                    //Picked up shield
-                    //Do I already have a shield?
-                    //If yes: do nothing
-                    //If not: activate the shield's visibility
-                    gameManager.ManagePowerupText(4);
+                    if (shieldPrefab.activeSelf == true)
+                    {
+                        // Already have a shield, do nothing
+                        break;
+                    } else
+                    {
+                     shieldPrefab.SetActive(true);
+                     StartCoroutine(ShieldPowerDown());
+                     gameManager.ManagePowerupText(4);
+                    }
+                        //Picked up shield
+                        //Do I already have a shield?
+                        //If yes: do nothing
+                        //If not: activate the shield's visibility
                     break;
             }
         }
