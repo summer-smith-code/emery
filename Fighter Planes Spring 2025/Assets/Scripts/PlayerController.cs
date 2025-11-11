@@ -123,10 +123,6 @@ public class PlayerController : MonoBehaviour
                      StartCoroutine(ShieldPowerDown());
                      gameManager.ManagePowerupText(4);
                     }
-                        //Picked up shield
-                        //Do I already have a shield?
-                        //If yes: do nothing
-                        //If not: activate the shield's visibility
                     break;
             }
         }
