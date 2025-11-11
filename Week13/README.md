@@ -1,11 +1,11 @@
 # DIG3480
-Week 12 Assignment
+Week 13 Assignment
 - Contributors:
 - Emma Lundquist
 - Summer Smith
 
-Task 1 - Completed by Summer Smith. Edited GameManager.cs
+Task 1 - Completed by Summer Smith and Emma Lundquist. Worked collaboratively on PlayerController.cs
 
-Task 2 - Completed by Emma Lundquist. Edited GameManager.cs and created Coin.cs
+Task 2 - Completed by Summer Smith and Emma Lundquist. Worked collaboratively on PlayerController.cs
 
-VIDEO LINK: https://youtu.be/p4SWSVShF2o
+VIDEO:
