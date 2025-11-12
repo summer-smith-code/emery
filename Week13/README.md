@@ -8,4 +8,5 @@ Task 1 - Completed by Summer Smith and Emma Lundquist. Worked collaboratively on
 
 Task 2 - Completed by Summer Smith and Emma Lundquist. Worked collaboratively on PlayerController.cs
 
-VIDEO:
+VIDEO: https://youtu.be/BO531jNWMpU
+
